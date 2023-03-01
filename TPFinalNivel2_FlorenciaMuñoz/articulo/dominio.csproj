@@ -41,14 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Articulo.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="Marca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\negocio\negocio.csproj">
-      <Project>{1e03d30b-691d-410b-86d1-3c82a9eafc14}</Project>
-      <Name>negocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

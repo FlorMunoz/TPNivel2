@@ -1,4 +1,6 @@
-﻿namespace Presentacion
+﻿using System.Windows.Forms;
+
+namespace Presentacion
 {
     partial class FormListadoArticulo
     {
@@ -116,6 +118,7 @@
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnModificar
             // 
@@ -125,6 +128,7 @@
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -134,6 +138,7 @@
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // FormListadoArticulo
             // 
@@ -153,6 +158,7 @@
             this.Controls.Add(this.dgvArticulos);
             this.Name = "FormListadoArticulo";
             this.Text = "ListadoArticulos";
+            this.Load += new System.EventHandler(this.FormListadoArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArticulo)).EndInit();
             this.ResumeLayout(false);
@@ -173,6 +179,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
+        private DataGridViewCellEventHandler dgvArticulos_CellContentClick;
     }
 }
 
